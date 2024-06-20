@@ -38,7 +38,7 @@ export default function App() {
       setTotalCRun(0);
       setTotalPRun(-1);
     }
-  });
+  }, []);
 
   useEffect(() => {
     if (secondInning) {
