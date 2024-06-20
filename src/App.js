@@ -38,7 +38,7 @@ export default function App() {
       setTotalCRun(0);
       setTotalPRun(-1);
     }
-  }, []);
+  });
 
   useEffect(() => {
     if (secondInning) {
@@ -160,6 +160,7 @@ export default function App() {
 
   return (
     <div className="App bg-[#73c04a]">
+      <meta property="og:image" content="cricketmini.png" />
       <div
         className={`flex bg-no-repeat bg-cover flex-col justify-around items-stretch h-screen`}
         style={{
